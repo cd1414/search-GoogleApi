@@ -4,16 +4,25 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 
+import { HttpClientModule } from '@angular/common/http';
+
+import { HomePageRoutingModule } from './home-routing.module';
+import { PipesModule } from '../pipes/pipes.module';
+import { BookInfoService } from '../services/book-info.service';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    PipesModule,
+    HomePageRoutingModule, HttpClientModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [
+    BarcodeScanner, BookInfoService
+  ]
 })
-export class HomePageModule {}
+export class HomePageModule { }

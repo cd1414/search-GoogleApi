@@ -1,27 +1,34 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+.books {
   margin: 0;
+  padding: 0;
 }
 
-#container a {
-  text-decoration: none;
+.book {
+  border-bottom: 1px solid rgba(179, 179, 179, 0.3);
+}
+
+.book-cover {
+  height: 250px;
+  width: auto;
+  margin: auto;
+}
+
+.book-rating {
+  color: rgb(255, 225, 0);
+}
+
+.book-descr {
+  overflow: hidden;
+  line-height: 1.5em;
+  height: 6em;
+  text-overflow: ellipsis;
+}
+
+.book-descr.show-more {
+  line-height: 1.5em;
+  height: auto;
+}
+
+ion-fab {
+  margin: 20px;
 }
