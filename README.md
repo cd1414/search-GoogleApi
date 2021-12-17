@@ -9,7 +9,7 @@ Simple application using Ionic, Angular and Capacitor, to build an application t
 
 ## Requirements
 
-- Not required a Google Books API key, the application is using endpoints that not required any key to be consumed.
+- Not required a Google Books API key.
 
 ## Installation 
 
